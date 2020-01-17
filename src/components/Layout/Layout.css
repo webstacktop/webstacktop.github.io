@@ -1,5 +1,5 @@
 .main {
-  margin: 0 auto;
+  padding-left: 320px;
 }
 .main .sidebar {
   position: fixed;
@@ -13,12 +13,11 @@
   -ms-overflow-style: none;
 }
 .main .sidebar .sidebar-inner {
-  width: 280px;
+  width: 320px;
   padding: 35px 0px 60px 20px;
 }
 .main .content {
   position: relative;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 35px 0 35px 50px;
+  max-width: 850px;
+  padding: 35px 0 35px 100px;
 }

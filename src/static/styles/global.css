@@ -11,7 +11,7 @@ html {
 }
 body {
   font-size: 14px;
-  font-family: georgia, serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: hsla(0, 0%, 0%, 0.8);
   font-weight: normal;
   word-wrap: break-word;
@@ -365,23 +365,62 @@ pre tt:after {
   top: 0;
   z-index: 20;
   width: 100%;
-  height: 64px;
-  line-height: 64px;
+  height: 60px;
+  line-height: 60px;
   padding: 0 20px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease-in-out;
   background-color: #fff;
 }
-.header .logo {
+.header-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header-inner .logo {
   display: block;
   width: 260px;
-  line-height: 64px;
-  font-size: 36px;
+  line-height: 60px;
+  font-size: 30px;
   color: #e14f2e;
   font-weight: bold;
   font-family: none;
   text-decoration: none;
 }
-.header .logo b {
+.header-inner .logo b {
   color: #2e9ed8;
+}
+.header-inner .nav .nav-item {
+  display: inline-block;
+  margin-left: 10px;
+  padding-left: 30px;
+  font-size: 20px;
+  color: #304455;
+  text-decoration: none;
+}
+.nav-item.html {
+  margin-left: 0;
+  background: url(../images/icon-html-200.png) no-repeat left center;
+  background-size: 25px 25px;
+}
+.nav-item.javascript {
+  background: url(../images/icon-javascript-200.png) no-repeat left center;
+  background-size: 25px 25px;
+}
+.nav-item.nodejs {
+  background: url(../images/icon-nodejs-200.png) no-repeat left center;
+  background-size: 30px 30px;
+}
+.nav-item.reactjs {
+  background: url(../images/icon-react-200.png) no-repeat left center;
+  background-size: 25px 25px;
+}
+.nav-item.git {
+  background: url(../images/icon-git-200.png) no-repeat left center;
+  background-size: 25px 25px;
+}
+.nav-item.blog {
+  background: url(../images/icon-blog-200.png) no-repeat left center;
+  background-size: 25px 25px;
 }
